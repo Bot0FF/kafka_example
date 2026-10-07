@@ -1,0 +1,28 @@
+ms:
+  kafka:
+    consumer:
+      bootstrapServer:
+        server1.test.ru
+        server2.test.ru
+        server3.test.ru
+      clientId: client-id
+      groupId: group-id
+      concurrencyCount: 6
+      topicConsumer: topic-consumer
+    producer:
+      bootstrapServer:
+        server1.test.ru
+        server2.test.ru
+        server3.test.ru
+      clientId: client-id
+      topicProducer: topic-producer
+    ssl:
+      enableSsl: true
+      protocol: SSL
+      keyStoreLocation: classpath:keystore/keystore.p12
+      keyStorePassword: password
+      keyPassword: password
+      keyStoreType: PKCS12
+      trustStoreLocation: classpath:keystore/truststore.p12
+      trustStorePassword: password
+      trustStoreType: PKCS12
